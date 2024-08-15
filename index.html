@@ -1,26 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Table Demo</title>
-<style>
-table,td,th{
-	border-width:5px;
-	border-collapse:collapse;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Jhalnath Chapagain's Biography</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<table border=1>
-<tr>
-	<th>Roll</th>
-	<th>Name</th>
-	<th>Contact</th>
-</tr>
-<tr>
-<td>1</td><td>Ram</td><td>9806087565</td>
-</tr>
-<tr>
-<td>2</td><td>Raju</td><td>9817856644</td>
-</tr>
-</table>
+    <header>
+        <h1>Mr. Jhalnath Chapagain</h1>
+        <nav>
+            <ul>
+                <li><a href="#bio">Biography</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="bio">
+        <h2>Biography</h2>
+        <div class="profile">
+            <img src="images/profile.jpg" alt="Mr. Jhalnath Chapagain">
+            <p>Mr. Jhalnath Chapagain is an esteemed educator currently teaching at Gomendra Multiple College and Shree Adarsha Secondary School. With a passion for teaching and learning, Mr. Chapagain inspires his students with his dedication and expertise.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor's Degree in Computer Science from Gomendra Multiple College</li>
+            <li>Currently pursuing a Master's in Computer Application</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mr. Jhalnath Chapagain. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
